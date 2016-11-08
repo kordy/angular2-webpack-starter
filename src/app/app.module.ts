@@ -14,10 +14,10 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
-import { HomeComponent } from './home';
-import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
-import { XLarge } from './home/x-large';
+import { TodoComponent } from './todo';
+import { TodoFormComponent } from './todo/todo-form/todo-form.component';
+import { TodoListComponent } from './todo/todo-list/todo-list.component';
+import { TodoItemComponent } from './todo/todo-item/todo-item.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -38,10 +38,10 @@ type StoreType = {
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    AboutComponent,
-    HomeComponent,
-    NoContentComponent,
-    XLarge
+    TodoComponent,
+    TodoFormComponent,
+    TodoListComponent,
+    TodoItemComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
@@ -93,4 +93,3 @@ export class AppModule {
   }
 
 }
-

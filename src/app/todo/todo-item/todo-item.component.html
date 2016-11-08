@@ -1,0 +1,8 @@
+<div>
+  <label>
+    <input type='checkbox' (change)='changeChecked($event)' checked='{{ todo.done ? "checked" : "" }}' />
+    {{ todo.done }}
+    <span>{{ todo.name }}</span>
+  </label>
+  <span (click)='removeItem(todo)'>X</span>
+</div>

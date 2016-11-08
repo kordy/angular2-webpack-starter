@@ -1,0 +1,5 @@
+<div>
+  <h2>Add todo</h2>
+  <input type='text' value='' (keyup.enter)='addItem(taskNameInput.value); taskNameInput.value = ""' #taskNameInput/>
+  <button (click)='addItem(taskNameInput.value); taskNameInput.value = ""'>Add</button>
+</div>
